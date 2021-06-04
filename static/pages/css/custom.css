@@ -1,0 +1,27 @@
+#jupyterhub-logo a::after {
+  content: 'phenikaa';
+  color: red;
+  position: relative;
+  right: 12px;
+  bottom: -12px;
+  font-size: 10px;
+}
+
+#jupyterhub-logo a:hover {
+  text-decoration: none;
+  cursor: normal;
+}
+
+#ipython_notebook a::after {
+  content: 'phenikaa';
+  color: red;
+  position: relative;
+  right: 12px;
+  bottom: -12px;
+  font-size: 10px;
+}
+
+#ipython_notebook a:hover {
+  text-decoration: none;
+  cursor: normal;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Phenikaa CS JupyterHub</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/hub/static/css/style.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/hub/static/pages/css/about.css" type="text/css"/>
+    <link rel="stylesheet" href="/hub/static/pages/css/custom.css" type="text/css"/>
+    <script src="/hub/static/components/requirejs/require.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      require.config({
+          //{% if version_hash %}
+          //urlArgs: "v={{version_hash}}",
+          //{% endif %}
+          baseUrl: '/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/hub",
+        prefix: "/",
+        admin_access: false,
+        options_form: false,
+      }
+    </script>
+</head>
+
+<body id="about-page"> 
+
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span id="jupyterhub-logo" class="pull-left">
+            <a href="/"><img src='/logo' alt='JupyterHub' class='jpy-logo' title='Home'/></a>
+        </span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#thenavbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="thenavbar">
+	<ul class="nav navbar-nav">
+		<li><a href="/hub/static/pages/about.html">About</a></li>
+	</ul>
+      </div>
+    </div>
+  </nav>
+  <section id="about">
+	  <h2>Phenikaa Jupyter Project</h2>
+	  <h2 class="subtitle">Phenikaa CS</h2>
+	  <p>
+	  As part of a pioneering initiative at Phenikaa University, this JupyterHub equips Phenikaa CS lecturers and their students. This JupyterHub, at first, aims at providing an environment for teaching AI, Data Science courses at Phenikaa CS. This system enables lecturers to create and manage courses using Jupyter Notebook, also students can use this JupyterHub for practicing and doing assignments. This JupyterHub complements the plethora of educational texts available by providing resources for learning through hands-on programming and computing. Our ambition does not stop at education only, we expect to expand the Hub to support research as well. This JupyterHub will be the platform for researchers to access and use computing resources on HPC once it becomes available.
+	  </p>
+	  <p>
+	  The groudwork for the Hub has been started by some Phenikaa CS members, this JupyterHub still has many things to be improved. We are actively seeking for collaboration and supports from other university's members. If you are interested, send us an email to <a href="mailto:trang.maixuan@phenikaa-uni.edu.vn">Mai Xuan Trang</a>.
+	  </p>
+  </section>
+  <section id="member">
+	  <h2>Current Team</h2>
+	  <ul class="members">
+		  <li class="member">
+			  <div class="member-avatar">
+				  <img src="/hub/static/pages/images/trang_avatar.jpg" alt="Mai Xuan Trang">
+			  </div>
+			  <div class="member-description">
+				  <div class="title">Mai Xuan Trang, PhD</div>
+				  <div class="subtitle">Lecturer at Phenikaa CS</div>
+			  </div>
+		  </li>
+		  <li class="member">
+			  <div class="member-avatar">
+				  <img src="/hub/static/pages/images/lam_avatar.jpeg" alt="Pham Tien Lam">
+			  </div>
+			  <div class="member-description">
+				  <div class="title">Pham Tien Lam, PhD</div>
+				  <div class="subtitle">Lecturer at Phenikaa CS</div>
+			  </div>
+		  </li>
+	  </ul>
+  </section>
+</body>
+</html>
