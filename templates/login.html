@@ -11,7 +11,7 @@
 {% block login %}
 <div id="login-main" class="container">
 <div class="header">
-	<h1>Jupyter @ Phenikaa Uni CS</h1>
+	<h1>Jupyter @ Datapot</h1>
 </div>
 <div class="row">
 {% if custom_html %}
@@ -28,7 +28,7 @@
 <div class="col-3">
 <form action="{{login_url}}?next={{next}}" method="post" role="form">
   <div class="auth-form-header">
-    Đăng nhập
+    Sign in
   </div>
   <div class='auth-form-body'>
 
@@ -42,7 +42,7 @@
       {{login_error}}
     </p>
     {% endif %}
-    <label for="username_input">Tên tài khoản:</label>
+    <label for="username_input">Username:</label>
     <input
       id="username_input"
       type="text"
@@ -54,7 +54,7 @@
       tabindex="1"
       autofocus="autofocus"
     />
-    <label for='password_input'>Mật khẩu:</label>
+    <label for='password_input'>Password:</label>
     <input
       type="password"
       class="form-control"
@@ -67,7 +67,7 @@
       type="submit"
       id="login_submit"
       class='btn btn-jupyter'
-      value='Đăng nhập'
+      value='Sign in'
       tabindex="3"
     />
   </div>
@@ -75,27 +75,13 @@
 </div>
 {% endif %}
 <div class="col-9">
-	<h2>Welcome to Phenikaa CS JupyterHub!</h2>
+	<h2>Welcome to Datapot JupyterHub!</h2>
 	<p>
-	Hệ thống JupyterHub này phục vụ giảng viên, nghiên cứu viên và sinh viên trường Đại Học Phenikaa.
+	Hệ thống JupyterHub này phục vụ học viên của chương trình FDC (chương trình vệ tinh "Data Science for Business" của Đại học Ngoại Thương), và học viên của Datapot.
 	</p>
 	<p>
-	Để đăng nhập vào hệ thống Jupyterhub, nhập tên tài khoản và mật khẩu cung cấp cho bạn từ giảng viên môn học<i> (Chú ý: Đây không phải là mã sinh viên của trường).</i> Nếu bạn muốn tạo tài khoản hoặc cần giúp đỡ vui lòng gửi mail cho <a href="mailto:trang.maixuan@phenikaa-uni.edu.vn">TS. Mai Xuân Tráng</a>.
+  Để đăng nhập vào hệ thống Jupyterhub, nhập tên tài khoản và mật khẩu cung cấp cho bạn từ giảng viên môn học. Nếu bạn muốn tạo tài khoản hoặc cần giúp đỡ vui lòng gửi mail cho <a href="mailto:trangmx@gmail.com">TS. Mai Xuân Tráng</a>.
 	</p>
-	<h3>News</h3>
-	<ul>
-		<li>Chạy thử nghiệm Phenikaa CS JupyterHub! September 1, 2020.</li>
-	</ul>
-	<h3>Các học phần sử dụng JupyterHub</h3>
-	<ul>
-		<li>
-			<b>2020-2021</b>
-		</li>
-		<ul>
-			<li>Nhập môn trí tuệ nhân tạo</li>
-			<li>Nhập môn công nghệ thông tin</li>
-		</ul>
-	</ul>
 	<h3>Getting started with Jupyter</h3>
 	<p>
 	Jupyter là môi trường nơi chúng ta có thể tạo được các notebook tương tác (interactive notebooks) với code, visualizations, etc. Dùng Jupyter để giảng dạy và nghiên cứu mang lại nhiều lợi ích và thú vị. Sau đây là một số tài nguyên hữu ích để làm quen với Jupyter:
@@ -115,7 +101,7 @@
 		  <tr>
 			  <td>
 				  <a href="https://cs.phenikaa-uni.edu.vn/">
-					  <img src="{{static_url("images/cs_phenikaa.png")}}" height="50">
+					  <img src="{{static_url("images/datapot.png")}}" height="50">
 				  </a>
 
 			  </td>
