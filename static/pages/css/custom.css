@@ -1,5 +1,5 @@
 #jupyterhub-logo a::after {
-  content: 'phenikaa';
+  content: 'Datapot';
   color: red;
   position: relative;
   right: 12px;
@@ -13,7 +13,7 @@
 }
 
 #ipython_notebook a::after {
-  content: 'phenikaa';
+  content: 'Datapot';
   color: red;
   position: relative;
   right: 12px;
