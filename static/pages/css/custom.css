@@ -1,27 +1,27 @@
-#jhub-logo a::after {
+#jupyterhub-logo a::after {
   content: 'Datapot';
   color: red;
   position: relative;
   right: 12px;
-  bottom: -13px;
+  bottom: -12px;
   font-size: 10px;
 }
 
-#jhub-logo a:hover {
+#jupyterhub-logo a:hover {
   text-decoration: none;
   cursor: normal;
 }
 
-#jpy_notebook a::after {
+#ipython_notebook a::after {
   content: 'Datapot';
   color: red;
   position: relative;
   right: 12px;
-  bottom: -13px;
+  bottom: -12px;
   font-size: 10px;
 }
 
-#jpy_notebook a:hover {
+#ipython_notebook a:hover {
   text-decoration: none;
   cursor: normal;
 }
